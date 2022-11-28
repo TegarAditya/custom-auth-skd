@@ -28,6 +28,7 @@ This project requires:
 - [PHP](https://php.net/) v8.0.2 or newer.
 - [Composer](https://getcomposer.org) v2.0.0 or newer.
 
+# Installing dependencies
 Install Composer dependencies:
 ```sh
 composer install
@@ -36,6 +37,33 @@ Install Node.js dependencies:
 ```sh
 npm install
 ```
+
+# Configure project environment
+Copy the .env.example files and rename it to .env
+```sh
+copy .env.example .env
+```
+Replace database configration value inside .env with your own configuration. Example
+```php
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=blog
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+# Migrating database
+Migrate the database with artisan command line:
+```sh
+php artisan migrate:fresh
+```
+Seeding user database (optional):
+```sh
+php artisan db:seed --class=CreateUsersSeeder
+```
+
+# Running project
 Run Node.js instance: 
 ```sh
 npm run dev
