@@ -45,12 +45,12 @@ copy .env.example .env
 ```
 Replace database configration value inside .env with your own configuration. Example
 ```php
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=blog
-DB_USERNAME=root
-DB_PASSWORD=
+DB_CONNECTION=mysql //replace with sql provider used
+DB_HOST=127.0.0.1 //replace with database's host address
+DB_PORT=3306 //replace with database's host port
+DB_DATABASE=laravel //replace with database's name
+DB_USERNAME=root //replace with database user's username used
+DB_PASSWORD= //replace password database user's password
 ```
 
 ### Migrating database
