@@ -21,6 +21,30 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Installation
+
+This project requires: 
+- [Node.js](https://nodejs.org/) v16 or newer.
+- [PHP](https://php.net/) v8.0.2 or newer.
+- [Composer](https://getcomposer.org) v2.0.0 or newer.
+
+Install Composer dependencies:
+```sh
+composer install
+```
+Install Node.js dependencies:
+```sh
+npm install
+```
+Run Node.js instance: 
+```sh
+npm run dev
+```
+Run Laravel project with PHP built-in webserver:
+```sh
+php artisan serve
+```
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
